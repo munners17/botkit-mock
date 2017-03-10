@@ -43,4 +43,9 @@ module.exports = function(bot, controller){
 		})
     });
 
+    controller.on('direct_message',function(bot,message) {
+        // send message to Voise
+        bot.reply(message, "You directly messaged me!");
+    });
+
 };

@@ -179,16 +179,19 @@ describe("controller tests",()=>{
         })
     });
 
-    it('should return `hello reply with typing` if user types `reply with typing`', (done)=>{
+    /* Controller on tests not supported yet
+    it('should return that you were directly messaged', (done)=>{
         var self = this;
         return self.controller.usersInput([{
             type: null,
             first: true,
             user: self.slackId,
-            messages:[{text: 'reply with typing', isAssertion: true}]
+            messages:[{text: 'test the catch all!', isAssertion: true}]
         }]).then((text)=>{
-            expect(text).toBe('hello reply with typing');
+            expect(text).toBe('You directly messaged me!');
             done()
         })
     });
+    */
+
 });

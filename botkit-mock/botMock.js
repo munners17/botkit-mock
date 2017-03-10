@@ -1,5 +1,6 @@
 'use strict';
 var api = require('./apiMock');
+const util = require('util');
 
 var convoId = 0;
 // mock for main bot object
